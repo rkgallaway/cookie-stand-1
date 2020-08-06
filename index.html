@@ -7,17 +7,98 @@
   <title>Cookie Stand</title>
   <!--link rel="stylesheet" href="css/reset.css" type="text/css"-->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <style></style>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #fa8072;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #fa8072;
+    }
+
+    .active {
+      background-color: #73ecfa;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <h1>Salmon Cookies</h1>
-    <h2></h2>
-  </header>
 
-  <footer>Copyright &copy;2020 - Doug "E" Fresh</footer>
-  <script src="js/app.js"></script>
+  <div class="header">
+    <img src="img/salmon.png" alt="logo">
+    <h1>Seattle's Best Salmon Cookies</h1>
+
+    <h2>Taste The Fishiness</h2>
+
+  </div>
+
+  <ul>
+
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#sales">Sales</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#about">About Pat - Our Head Scientist</a></li>
+
+  </ul>
+
+  <main>
+
+
+    <article>
+      <img src="images/macaroons.jpg" alt="Doug">
+    </article>
+
+    <article>
+      <img src="images/cookies1.jpg" alt="cookies">
+    </article>
+    <article>
+      <img src="images/cookies2.png" alt="cookies">
+    </article>
+    <article>
+      <img src="images/cookies3.jpg" alt="cookies">
+
+    </article>
+
+    <h2>What our customers have to say</h2>
+
+    <p>Doug (Gig harbor, WA) - These are the fishiest Salmon Cookies that I've ever tasted. I give them 5 Stars!</p>
+
+    <p>Scott (Seattle, WA) - As an award-winning Tattoo Artist, I'm pretty picky when it comes to my Salmon Cookies,
+      and I can honestly say, I'd add these to my arm piece any day!</p>
+
+    <p>Steve-O (Everett, WA) - I haven't had Salmon Cookies this good since my North Atlantic cruise in the Navy. I
+      give them 5 Stars!</p>
+
+    <p>Nick (Seattle, WA) - BEST EVER!</p>
+
+    <p>Chase (Seattle, WA) - I'd move across the country for these cookies!</p>
+
+
+  </main>
+  <br>
+  <footer>Copyright &copy;2020 - Black Heart Studios - Hours: 6:00 AM - 8:00 PM / 7 Days a Week</footer>
+
+  <address>Contact us at:
+    <a href="mailto:fishycookies@gmail.com">Seattle's Best Salmon Cookies</address>
+  <script src=" js/app.js"></script>
+
+
 </body>
 
 </html>
