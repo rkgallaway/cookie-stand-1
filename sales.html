@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seattle's Best Salmon Cookies - Sales</title>
+  <!--link rel="stylesheet" href="css/reset.css" type="text/css"-->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #fa8072;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #fa8072;
+    }
+
+    .active {
+      background-color: #73ecfa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="img/salmon.png" alt="logo">
+    <h1>Seattle's Best Salmon Cookies</h1>
+    <h2>Taste The Fishiness</h2>
+  </div>
+
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="sales.html">Sales</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#about">About Pat - Our Head Scientist</a></li>
+  </ul>
+
+  <main>
+    <section id="stores">
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
