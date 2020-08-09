@@ -58,10 +58,6 @@ ul {
     background-color: #fa8072;
 }
 
-li {
-    float: left;
-}
-
 li a {
     display: block;
     color: black;
