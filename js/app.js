@@ -78,6 +78,7 @@ function Cities(name, minCust, maxCust, averageCookieSale, openTime, closeTime) 
   this.openTime = openTime;
   this.closeTime = closeTime;
   this.hourlyTotal = [];
+  this.dailyTotal = 0;
 }
 
 Cities.prototype.calcCookiesPerHour = function () {
@@ -88,14 +89,37 @@ Cities.prototype.calcCookiesPerHour = function () {
   }
 };
 
+Cities.prototype.render = function () {
+  this.calcCookiesPerHour();
+  var tableEl = document.getElementById('dataTable');
+
+  var trElement = document.createElement('tr');
+  tableEl.appendChild(trElement);
+
+  var thElement = document.createElement('th');
+  thElement.textContent = this.name;
+  trElement.appendChild(thElement);
+
+  for (var j = 0; j < this.hourlyTotal.length; j++) {
+    var tdElement = document.createElement('td');
+    tdElement.textContent = this.hourlyTotal[j];
+    trElement.appendChild(tdElement);
+  }
+
+  tdElement = document.createElement('td');
+  tdElement.textContent = this.dailyTotal;
+  trElement.appendChild(tdElement);
+  tableEl.appendChild(trElement);
+};
+
 var seattle = new Cities('Seattle', 23, 65, 6.3, 6, 20);
 var tokyo = new Cities('Tokyo', 3, 24, 1.2, 6, 20);
 var dubai = new Cities('Dubai', 11, 38, 3.7, 6, 20);
 var paris = new Cities('Paris', 20, 38, 2.3, 6, 20);
 var lima = new Cities('Lima', 2, 16, 4.6, 6, 20);
 
-seattle.calcCookiesPerHour();
 
+// var city = [seattle];
 var city = [seattle, tokyo, dubai, paris, lima];
 
 for (var k = 0; k < city.length; k++) {
@@ -122,31 +146,20 @@ function renderheader() {
 }
 
 renderheader();
-
-var tableEl = document.getElementById('dataTable');
-
-var trElement = document.createElement('tr');
-tableEl.appendChild(trElement);
-
-var thElement = document.createElement('th');
-thElement.textContent = seattle.name;
-trElement.appendChild(thElement);
-
-for (var j = 0; j < seattle.hourlyTotal.length; j++) {
-  var tdElement = document.createElement('td');
-  tdElement.textContent = seattle.hourlyTotal[j];
-  trElement.appendChild(tdElement);
+for (var i = 0; i < city.length; i++) {
+  city[i].render();
 }
 
-var thElement = document.createElement('th');
-thElement.textContent = tokyo.name;
-trElement.appendChild(thElement);
 
-for (var j = 0; j < tokyo.hourlyTotal.length; j++) {
-  var tdElement = document.createElement('td');
-  tdElement.textContent = tokyo.hourlyTotal[j];
-  trElement.appendChild(tdElement);
-}
+// thElement = document.createElement('td');
+// thElement.textContent = tokyo.name;
+// trElement.appendChild(thElement);
+
+// for (var j = 0; j < tokyo.hourlyTotal.length; j++) {
+//   tdElement = document.createElement('td');
+//   tdElement.textContent = tokyo.hourlyTotal[j];
+//   trElement.appendChild(tdElement);
+// }
 
 // Tokyo
 
