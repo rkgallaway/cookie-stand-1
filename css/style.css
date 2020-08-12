@@ -42,6 +42,22 @@ main > article > img {
     border-width: 5px;
 }
 
+.rectangle1 {
+    height: 300px;
+    width: 600px;
+    padding: 5px;
+    float: left;
+    border-radius: 50%;
+}
+
+.rectangle2 {
+    height: 350px;
+    width: 600px;
+    padding: 5px;
+    float: right;
+    border-radius: 50%;
+}
+
 main > article > p {
     display: block;
     width: 750px;
@@ -56,10 +72,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #fa8072;
-}
-
-li {
-    float: left;
 }
 
 li a {
