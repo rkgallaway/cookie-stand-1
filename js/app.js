@@ -84,5 +84,30 @@ renderheader();
 for (var i = 0; i < city.length; i++) {
   city[i].render();
 }
+renderFooter();
 
+function renderFooter() {
+  var headerrow = document.createElement('tr');
+  tableBody.appendChild(headerrow);
+  var tdElement = document.createElement('td');
 
+  tdElement.textContent = 'Daily Total';
+  headerrow.appendChild(tdElement);
+
+  var runningTotal;
+
+  for (var i = 0; i < hours.length; i++) {
+    var tdElement = document.createElement('td');
+    var total = 0;
+    for (var j = 0; j < city.length; j++) {
+      total += city[i].custPerHourArray[j];
+      runningTotal += city[i].custPerHourArray[j];
+    }
+    tdElement.textContent = total;
+    headerrow.appendChild(tdElement);
+
+  }
+  var tdElement = document.createElement('td');
+  tdElement.textContent = runningTotal;
+  headerrow.appendChild(tdElement);
+}
