@@ -21,7 +21,7 @@ function Cities(name, minCust, maxCust, averageCookieSale, openTime, closeTime) 
 Cities.prototype.calcCookiesPerHour = function () {
   for (var i = 0; i < 14; i++) {
     this.hourlyTotal[i] = Math.ceil(getRandomIntInclusive(this.minCust, this.maxCust) * this.averageCookieSale);
-    this.dailyTotal += this.hourlyTotal[i];
+    //his.dailyTotal += this.hourlyTotal[i];
     console.log(this.hourlyTotal[i]);
   }
 };
@@ -41,6 +41,7 @@ Cities.prototype.render = function () {
     var tdElement = document.createElement('td');
     tdElement.textContent = this.hourlyTotal[j];
     trElement.appendChild(tdElement);
+    this.dailyTotal += this.hourlyTotal[j];
   }
 
   tdElement = document.createElement('td');
@@ -78,6 +79,7 @@ function renderheader() {
   var headertotal = document.createElement('th');
   headertotal.textContent = 'Store Totals';
   headerrow.appendChild(headertotal);
+  console.log(headertotal);
 }
 
 renderheader();
@@ -94,20 +96,21 @@ function renderFooter() {
   tdElement.textContent = 'Daily Total';
   headerrow.appendChild(tdElement);
 
-  var runningTotal;
+  var runningTotal = 0;
 
   for (var i = 0; i < hours.length; i++) {
-    var tdElement = document.createElement('td');
+    tdElement = document.createElement('td');
     var total = 0;
     for (var j = 0; j < city.length; j++) {
-      total += city[i].custPerHourArray[j];
-      runningTotal += city[i].custPerHourArray[j];
+      total += city[j].hourlyTotal[i];
+      runningTotal += city[j].hourlyTotal[i];
+      tdElement.textContent = total;
+      headerrow.appendChild(tdElement);
     }
-    tdElement.textContent = total;
-    headerrow.appendChild(tdElement);
+
 
   }
-  var tdElement = document.createElement('td');
+  tdElement = document.createElement('td');
   tdElement.textContent = runningTotal;
   headerrow.appendChild(tdElement);
 }
