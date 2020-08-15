@@ -97,3 +97,11 @@ h1 {
 h2 {
     font-family: brush script, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+fieldset {
+    border: 10px solid #fa8072
+}
+
+table {
+    border: 10px solid #fa8072
+}

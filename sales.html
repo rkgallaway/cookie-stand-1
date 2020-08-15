@@ -86,10 +86,38 @@
         </tr>
       </thead>
     </table> -->
+    <br>
+    <form id="New Store">
+      <fieldset>
+        <legend>Enter New Store Information</legend>
 
-    <table id="dataTable"></table>
+        <label for="storeName">Enter Store City</label>
+        <input type="text" placeholder="Enter City Name" name="storeName">
+
+        <label for="minCust">Minimum Customer's Per Hour:</label>
+        <input type="text" placeholder="Enter Minimum Customers Per Hour" name="minCust">
+
+        <label for="maxCust">Maximum Customer's Per Hour:</label>
+        <input type="text" placeholder="Enter Maximum Customer's Per Hour" name="maxCust">
+        </label>
+
+        <label for="averageCookieSale">Average Cookies Sold Per Hour:</label>
+        <input type="text" placeholder="Enter average number of cookies sold per Hour" name="averageCookieSale">
+        </label>
+
+        <button type="submit">Send</button>
+      </fieldset>
+    </form>
+    <br>
+
+    <table id="table"></table>
 
 
+    <table id="dataTable" width="100%" border="10"></table>
+    <br>
+    <article>
+      <img src="images/cookies3.jpg" alt="family" class="rectangle2">
+    </article>
 
   </main>
   <script src="js/app.js"></script>
