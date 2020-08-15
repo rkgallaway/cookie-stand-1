@@ -1,9 +1,9 @@
 'use strict';
 
-// Sourced from MDN Web Docs - Math.random
 var hours = ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM'];
 var allCities = [];
 
+// Sourced from MDN Web Docs - Math.random
 function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
 }
@@ -32,10 +32,8 @@ Cities.prototype.calcCookiesPerHour = function () {
 Cities.prototype.render = function () {
   this.calcCookiesPerHour();
   var tableEl = document.getElementById('dataTable');
-
   var trElement = document.createElement('tr');
   tableEl.appendChild(trElement);
-
   var thElement = document.createElement('th');
   thElement.textContent = this.name;
   trElement.appendChild(thElement);
@@ -69,31 +67,21 @@ var newStore = document.getElementById('New Store');
 
 function handleSubmit(event) {
   event.preventDefault();
-
-  console.log(event.target);
-
+  //console.log(event.target);
   var storeName = event.target.storeName.value;
-  console.log('Store Name: ', storeName);
-
+  //console.log('Store Name: ', storeName);
   var minCust = parseInt(event.target.minCust.value);
-  console.log('Minimum Customer\'s per hour: ', minCust);
-
+  //console.log('Minimum Customer\'s per hour: ', minCust);
   var maxCust = parseInt(event.target.maxCust.value);
-  console.log('Maximum Customer\'s per hour: ', maxCust);
-
+  //console.log('Maximum Customer\'s per hour: ', maxCust);
   var averageCookieSale = parseFloat(event.target.averageCookieSale.value);
-  console.log('Average Cookies Sold per hour: ', averageCookieSale);
-
+  //console.log('Average Cookies Sold per hour: ', averageCookieSale);
   var newStore = new Cities(storeName, minCust, maxCust, averageCookieSale);
-
   event.target.storeName.value = null;
   event.target.minCust.value = null;
   event.target.maxCust.value = null;
   event.target.averageCookieSale.value = null;
-
-
   renderTable();
-
 }
 
 var tableBody = document.getElementById('dataTable');
@@ -115,24 +103,18 @@ function renderheader() {
   headerrow.appendChild(headertotal);
   console.log(headertotal);
 }
-
-
 // renderheader();
 // for (var i = 0; i < allCities.length; i++) {
 //   allCities[i].render();
 // }
 // renderFooter();
-
 function renderFooter() {
   var headerrow = document.createElement('tr');
   tableBody.appendChild(headerrow);
   var tdElement = document.createElement('td');
-
   tdElement.textContent = 'Daily Total';
   headerrow.appendChild(tdElement);
-
   var runningTotal = 0;
-
   for (var i = 0; i < hours.length; i++) {
     tdElement = document.createElement('td');
     var total = 0;
@@ -142,15 +124,11 @@ function renderFooter() {
       tdElement.textContent = total;
       headerrow.appendChild(tdElement);
     }
-
-
   }
   tdElement = document.createElement('td');
   tdElement.textContent = runningTotal;
   headerrow.appendChild(tdElement);
 }
-
-
 
 function renderTable() {
   tableBody.innerHTML = '';
@@ -160,11 +138,8 @@ function renderTable() {
   }
   renderFooter();
 }
-
 newStore.addEventListener('submit', handleSubmit);
-
 // for (var j = 0; j < allCities.length; j++) {
 //   allCities[j].render();
 // }
-
 renderTable();
