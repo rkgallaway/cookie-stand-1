@@ -39,7 +39,7 @@ You’ve got a lot to do. Plan your work, and work your plan.
      1. A different background color for elements such boxes and tables 
      1. Included all of the typical stuff that you’ll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user.
 
-  ### Aug 8, 2020: Added a COnstructor Function
+  ### Aug 8, 2020: Added a Constructor Function
 
     1. Created a new branch for today’s lab. Made sure it had all of my changes from lab 06 so that I could extend the functionality.
     1. Replaced all of my object literals for the salmon cookie stand with a single constructor function that, when called with the ‘new’ keyword, it created a new instance.
