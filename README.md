@@ -23,8 +23,8 @@ You’ve got a lot to do. Plan your work, and work your plan.
 
 ### Aug 6, 2020: Started Salmon Cookies Project
 
-  - Sales Data
-   - Within your javascript file (example: app.js), created separate JS object literals for each shop location that outputs the following to the sales.html file:
+  - Sales Dat
+    - Within your javascript file (example: app.js), created separate JS object literals for each shop location that outputs the following to the sales.html files:
     1. Stored the min/max hourly customers, and the average cookies per customer, in object properties
     1. Set a method of that object to generate a random number of customers per hour. Objects/Math/random
     1. Calculated and stored the simulated amounts of cookies purchased for each hour at each location using average cookies purchased and the random number of customers generated
