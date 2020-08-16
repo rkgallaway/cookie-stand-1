@@ -24,20 +24,20 @@ You’ve got a lot to do. Plan your work, and work your plan.
 ### Aug 6, 2020: Started Salmon Cookies Project
 
   - Sales Data
-    - Within your javascript file (example: app.js), created separate JS object literals for each shop location that outputs the following to the sales.html file:
+   - Within your javascript file (example: app.js), created separate JS object literals for each shop location that outputs the following to the sales.html file:
       1. Stored the min/max hourly customers, and the average cookies per customer, in object properties
       1. Set a method of that object to generate a random number of customers per hour. Objects/Math/random
       1. Calculated and stored the simulated amounts of cookies purchased for each hour at each location using average cookies purchased and the random number of customers generated
       1. Stored the results for each location in a separate array as a property of the object representing that location
       1. Displayed the values of each array as unordered lists in the browser
   - Home Page
-    - In addition to the provided picture of a fish, my index.html file should contained:
-      1. A custom Google font for highlights
-      1. A specified standard sans-serif web font for data (such as Arial, Verdana, or Helvetica)
-      1. Specified different font colors for all three font usages
-      1. A background color for the default page background 
-      1. A different background color for elements such boxes and tables 
-      1. Included all of the typical stuff that you’ll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user.
+   - In addition to the provided picture of a fish, my index.html file should contained:
+     1. A custom Google font for highlights
+     1. A specified standard sans-serif web font for data (such as Arial, Verdana, or Helvetica)
+     1. Specified different font colors for all three font usages
+     1. A background color for the default page background 
+     1. A different background color for elements such boxes and tables 
+     1. Included all of the typical stuff that you’ll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user.
 
   ### Aug 8, 2020: Added a COnstructor Function
 
