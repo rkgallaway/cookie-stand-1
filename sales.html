@@ -5,38 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seattle's Best Salmon Cookies - Sales</title>
-  <!--link rel="stylesheet" href="css/reset.css" type="text/css"-->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
-
-  <style>
-    header>ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #fa8072;
-    }
-
-    header>ul>li {
-      float: left;
-    }
-
-    header>ul>li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    header>ul>li a:hover:not(.active) {
-      background-color: #fa8072;
-    }
-
-    .active {
-      background-color: #73ecfa;
-    }
-  </style>
 </head>
 
 <body>
@@ -54,38 +23,8 @@
       <li><a href="#about">About Pat - Our Head Scientist</a></li>
     </ul>
   </header>
+
   <main>
-
-    <!-- <h3>Seattle</h3>
-    <ul id="seattle"></ul> -->
-
-    <!-- <table>
-      <thead>
-        <tr>
-          <th>City</th>
-          <th>6:00 AM</th>
-          <th>7:00 AM</th>
-          <th>8:00 AM</th>
-          <th>9:00 AM</th>
-          <th>10:00 AM</th>
-          <th>11:00 AM</th>
-          <th>12:00 AM</th>
-          <th>1:00 PM</th>
-          <th>2:00 PM</th>
-          <th>3:00 PM</th>
-          <th>4:00 PM</th>
-          <th>5:00 PM</th>
-          <th>6:00 PM</th>
-          <th>7:00 PM</th>
-        </tr>
-        <tr>
-          <td>Data</td>
-          <td>Data</td>
-          <td>Data</td>
-          <td>Data</td>
-        </tr>
-      </thead>
-    </table> -->
     <br>
     <form id="New Store">
       <fieldset>
@@ -95,14 +34,14 @@
         <input type="text" placeholder="Enter City Name" name="storeName">
 
         <label for="minCust">Minimum Customer's Per Hour:</label>
-        <input type="text" placeholder="Enter Minimum Customers Per Hour" name="minCust">
+        <input type="number" placeholder="Enter Minimum Customers Per Hour" name="minCust">
 
         <label for="maxCust">Maximum Customer's Per Hour:</label>
-        <input type="text" placeholder="Enter Maximum Customer's Per Hour" name="maxCust">
+        <input type="number" placeholder="Enter Maximum Customer's Per Hour" name="maxCust">
         </label>
 
         <label for="averageCookieSale">Average Cookies Sold Per Hour:</label>
-        <input type="text" placeholder="Enter average number of cookies sold per Hour" name="averageCookieSale">
+        <input type="number" placeholder="Enter average number of cookies sold per Hour" name="averageCookieSale">
         </label>
 
         <button type="submit">Send</button>
@@ -111,14 +50,31 @@
     <br>
 
     <table id="table"></table>
-
-
     <table id="dataTable" width="100%" border="10"></table>
     <br>
+
     <article>
       <img src="images/cookies3.jpg" alt="family" class="rectangle2">
     </article>
 
+    <article>
+      <img src="images/macaroons.jpg" alt="family" class="rectangle2">
+    </article>
+
+    <article>
+      <img src="images/fishpops.jpeg" alt="family" class="rectangle2">
+    </article>
+
+    <article>
+      <img src="images/family.jpg" alt="family" class="rectangle2">
+    </article>
+
   </main>
   <script src="js/app.js"></script>
+
+  <footer>Copyright &copy;2020 - Black Heart Studios | Hours: 6:00 AM - 8:00 PM / 7 Days a Week | Locations in Seattle,
+    Tokyo, Dubai, Paris and Lima
+  </footer>
+  <address>Contact us at:
+    <a href="mailto:fishycookies@gmail.com">Seattle's Best Salmon Cookies</address>
 </body>
