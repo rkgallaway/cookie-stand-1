@@ -70,3 +70,7 @@ In addition to the provided picture of a fish, my index.html file should contain
    1. Created an event handler that creates a new instance of a cookie stand that appends to the table upon form submission.
    1. Use the constructor function as my guide to determine what input fields the form needs.
    1. Validated my html through HTML5 validation.
+   
+   ### Aug 18, 2020: Submit Final and Deploy
+   
+      1. Deployed my final version of the site
