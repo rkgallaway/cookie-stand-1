@@ -38,27 +38,27 @@ Home Page
    
 In addition to the provided picture of a fish, my index.html file should contained:
 
-    1. A custom Google font for highlights
-    1. A specified standard sans-serif web font for data (such as Arial, Verdana, or Helvetica)
-    1. Specified different font colors for all three font usages
-    1. A background color for the default page background 
-    1. A different background color for elements such boxes and tables 
-    1. Included all of the typical stuff that you’ll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user.
+    - A custom Google font for highlights
+    - A specified standard sans-serif web font for data (such as Arial, Verdana, or Helvetica)
+    - Specified different font colors for all three font usages
+    - A background color for the default page background 
+    - A different background color for elements such boxes and tables 
+    - Included all of the typical stuff that you’ll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user.
 
   ### Aug 8, 2020: Added a Constructor Function
 
-    1. Created a new branch for today’s lab. Made sure it had all of my changes from lab 06 so that I could extend the functionality.
-    1. Replaced all of my object literals for the salmon cookie stand with a single constructor function that, when called with the ‘new’ keyword, it created a new instance.
-    1. Replaced the lists of my data for each store and built a single table of data instead. 
-    1. Displayed each stores data in a table format. Broke each column by the hour and completed each row with a “Daily Location Total”.
-    1. Each cookie stand location had a separate render() method that created and appended its row to the table
-    1. The header row and footer row were each created in their own stand-alone function    
+    - Created a new branch for today’s lab. Made sure it had all of my changes from lab 06 so that I could extend the functionality.
+    - Replaced all of my object literals for the salmon cookie stand with a single constructor function that, when called with the ‘new’ keyword, it created a new instance.
+    - Replaced the lists of my data for each store and built a single table of data instead. 
+    - Displayed each stores data in a table format. Broke each column by the hour and completed each row with a “Daily Location Total”.
+    - Each cookie stand location had a separate render() method that created and appended its row to the table
+    - The header row and footer row were each created in their own stand-alone function    
 
   ### Aug 13, 2020: Styling Cookie Project
 
-    1. Continued working on the functionality of my sales.html page 
-    1. Pat has provided us 7 additional images that they would like to see on the home page of the site. Added images
-    1. Public-facing index.html page - the following was added:
+    - Continued working on the functionality of my sales.html page 
+    - Pat has provided us 7 additional images that they would like to see on the home page of the site. Added images
+    - Public-facing index.html page - the following was added:
       - locations with addresses,
       - Hours open
       - Contact information
@@ -66,11 +66,11 @@ In addition to the provided picture of a fish, my index.html file should contain
 
   ### Aug 15, 2020: Added a form to the Cookie Stand Project.
   
-   1. Create a new HTML form to accept the information for a new cookie stand. Utilized the <fieldset> tag to help style it.
-   1. Created an event handler that creates a new instance of a cookie stand that appends to the table upon form submission.
-   1. Use the constructor function as my guide to determine what input fields the form needs.
-   1. Validated my html through HTML5 validation.
+   - Create a new HTML form to accept the information for a new cookie stand. Utilized the <fieldset> tag to help style it.
+   - Created an event handler that creates a new instance of a cookie stand that appends to the table upon form submission.
+   - Use the constructor function as my guide to determine what input fields the form needs.
+   - Validated my html through HTML5 validation.
    
    ### Aug 18, 2020: Submit Final and Deploy
    
-      1. Deployed my final version of the site
+      - Deployed my final version of the site
